@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .navbar {
+            background-color: rgb(23, 23, 23);
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav li {
+            list-style: none;
+            padding: 23px 23px;
+        }
+
+        section h3,
+        section p {
+            text-align: center;
+            font-size: 23px;
+            filter: invert(100%);
+            padding: 20px;
+        }
+
+        .heading {
+            padding-top: 100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        /* .navbar::before {
+            content: "";
+            background: url('https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        } */
+
+        .main {
+            background: url('https://plus.unsplash.com/premium_photo-1668196793119-f8fa2ee0d90a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80') no-repeat center center/cover;
+            height: 25rem;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            flex-wrap: wrap;
+            border: 2px solid red;
+            margin: 10px auto;
+            padding: 10px 30px;
+            background-color: beige;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .txt-center {
+            text-align: center;
+            margin: 12px 0px;
+        }
+
+        .box img {
+            display: block;
+            margin: auto;
+            height: 130px;
+            width: 206px;
+            border-radius: 5%
+        }
+
+        @media only screen and (max-width: 1300px) {
+            /* @media only screen and (max-width: 590px) { */
+
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                overflow-x: hidden;
+            }
+
+            /* .nav {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 10px;
+                width: 100%;
+            }
+
+            .nav li {
+                padding: 6px 0px;
+                margin: 6px 0px;
+            } */
+
+            .main {
+                height: 520px;
+            }
+
+            .container {
+                flex-direction: column;
+                margin: 10px 10px;
+                padding: 10px 15px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: auto;
+            }
+        }
+
+
+        @media only screen and (max-width: 550px) {
+
+            .main {
+                height: 700px;
+            }
+
+        }
+
+        @media only screen and (max-width: 375px) {
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 10px;
+                width: 100%;
+            }
+
+            .nav li {
+                padding: 6px 0px;
+                margin: 6px 0px;
+            }
+
+            .main {
+                height: auto;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+            
+            .box img {
+                display: block;
+                margin: auto;
+                height: 50px;
+                width: 60px;
+                border-radius: 5%
+            }
+
+        }
+
+
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="main">
+            <h3 class="heading">Welcome</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet dignissimos ex
+                dolorum atque
+                pariatur mollitia quas officia ipsa similique nihil, sint rerum vel, ducimus quaerat facilis. Iste
+                expedita
+                inventore eaque omnis, amet adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                nihil, voluptate illum hic ea magni ad consectetur maxime consequuntur culpa veniam sed labore libero ab
+                omnis dolor officiis, reiciendis quaerat eveniet cum deserunt. Commodi?</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="box" id="box1">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=481&q=80"
+                alt="">
+            <h2 class="txt-center">Food Ordering</h2>
+            <p class="txt-center">
+                box1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores perferendis Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Reiciendis ducimus similique unde amet iure quam
+            </p>
+        </div>
+        <div class="box" id="box2">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=481&q=80"
+                alt="">
+            <h2 class="txt-center">Food Ordering</h2>
+            <p class="txt-center">
+                box2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, molestias
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus similique unde amet iure
+                quam
+            </p>
+        </div>
+        <div class="box" id="box3">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=481&q=80"
+                alt="">
+            <h2 class="txt-center">Food Ordering</h2>
+            <p class="txt-center">
+                box3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, cumque
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus similique unde amet iure
+                quam
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
